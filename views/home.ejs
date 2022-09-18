@@ -1,0 +1,13 @@
+<%- include("header") -%>
+
+<h1>Home</h1>
+
+<p><%= homeStartingContent %></p>
+
+<% posts.map(function(post){ %>
+<h4> <%= post.title %></h4>
+<p> <%= post.content.substr(0,100) + "..." %><a href="/post/<%=post.title%>">Read More</a></p>
+<% }) %>
+
+<a class="btn btn-success" href="/compose" >Add</a> 
+<%- include("footer") -%>
