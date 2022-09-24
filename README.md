@@ -36,6 +36,7 @@ mongoose.connect("mongodb+srv://<username>:<password>@<clustername>.mongodb.net/
 
 # Update
 - Add connection to mongodb Atlas
+- Alternative demo is hosted on [Railway](https://ejsblog-production.up.railway.app/) free-tier
 
 # Preview
 - Homepage
