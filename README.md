@@ -16,15 +16,26 @@
 - Node: ^14.17.6
 - ejs: ^3.1.8
 - lodash: ^4.17.21
+- mongoose: ^6.6.1
 
 # Usage
 1. Install dependencies: `npm install`
 2. Run server: `note app.js`
+3. Create a mongoDB Atlas account
+4. Connect to your database via mongoose with the URI of your database (remember to change the information of username,password,clustername and password accordingly)
+```
+mongoose.connect("mongodb+srv://<username>:<password>@<clustername>.mongodb.net/<databasename>?w=majority");
+```
+    - Your should be able to get a customized URI from your account
+    - For more detailed information and documentation, please visit mongoDB doc website mongoDB/docs
 
 # Lesson Learned
 - Implement EJS template page to simplify the web development process
 - Passing variables through express
 - Use express route parameters for useful purposes.
+
+# Update
+- Add connection to mongodb Atlas
 
 # Preview
 - Homepage

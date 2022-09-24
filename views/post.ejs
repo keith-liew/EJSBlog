@@ -4,5 +4,5 @@
 
 <p><%= post.content %></p>
 
-
+<form action="/delete" method="post"><button class="btn btn-danger" action="submit" name="title" value="<%= post.title %>">Delete</button></form>
 <%- include("footer") -%>
